@@ -1,0 +1,103 @@
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.footer-side {
+  text-align: center;
+  padding: 10px 5px;
+  background-color: #2b70fafd;
+  margin-top: auto;
+}
+
+.footer-side.light {
+  background-color: #f3f4f6;
+}
+
+.footer-side.dark {
+  background-color: #2c2c2c;
+  color: white;
+}
+
+
+.light .modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background-color:  #fff;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
+  padding: 18px;
+  border-radius: 8px;
+}
+.dark .modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.2);
+  border: 1px solid white;
+  padding: 18px;
+  border-radius: 8px;
+}
+
+.appbar-header.dark {
+  background-color: #1c1c1c !important;
+  color: white;
+}
+
+.no-data-image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.invisible-scrollbar {
+  overflow-y: auto;
+  scrollbar-width: thin !important;
+  max-height: calc(100vh - 128px);
+  scrollbar-width: none !important;
+}
+
+.invisible-scrollbar::-webkit-scrollbar {
+  width: 0px !important;
+}
+
+.invisible-scrollbar::-webkit-scrollbar-thumb {
+  background: #0f7bed;
+  border-radius: 4px;
+}
+
+.invisible-scrollbar::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+.appbar-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1100;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 1100;
+  background-color: #f5f5f5;
+  text-align: center;
+}

@@ -1,0 +1,102 @@
+.card-container {
+  &.light {
+    background-color: hsl(0, 0%, 96%);
+    border: 1px solid rgb(0, 64, 255);
+  }
+
+  &.dark {
+    background-color: #333333;
+  }
+}
+.card-container.light {
+  background-color: #fff;
+  border: 1px solid rgb(115, 146, 237);
+  box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+  
+}
+ 
+.card-container.dark {
+  background-color: #333333;
+  border: 1px solid #ccc;
+  box-shadow: 4px 4px 12px #ffffffc9;
+}
+.card-container .text-color-black{
+  color: black;
+}
+.card-container.dark .text-color-black{
+  color: hsl(0, 14%, 97%);
+}
+.card-container .completed-task {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.card-container .overdue {
+  color: red;
+  font-weight: bold;
+
+}
+.progress {
+  height: 1rem;
+  margin-top: 1rem;
+  background-color: #f0f0f0;
+  border: 1px solid orange;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  height: 100%;
+  background-color: #ffc107;
+}
+.card-container .status-pending {
+  color: red;
+  font-weight: bold;
+}
+
+.card-container .status-in-progress {
+  color: orange;
+  font-weight: bold;
+}
+
+.card-container .status-completed {
+  color: green;
+  font-weight: bold;
+}
+
+.card-container .priority-high {
+  color: red;
+  font-weight: bold;
+}
+
+.card-container .priority-medium {
+  color: orange;
+  font-weight: bold;
+}
+
+.card-container .priority-low {
+  color: green;
+  font-weight: bold;
+}
+
+.card-container.menu-icon {
+  cursor: pointer;
+  color: black;
+}
+.card-container.dark .menu-icon {
+  cursor: pointer;
+  color: white;
+}
+
+.progress-bar {
+  height: 100%; 
+  background-color: #ffc107; 
+  color: black; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  font-weight: bold; 
+  text-align: center; 
+  white-space: nowrap; 
+  transition: width 0.3s ease-in-out; 
+}
