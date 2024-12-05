@@ -62,7 +62,7 @@ const TaskCard = ({ task, index, onEditTask, onDeleteTask, onUpdateTaskStatus })
 
   return (
     <Box sx={{ p: "1ch" }} className={`${theme}`}>
-      <Card className={`card-container ${theme}`}>
+      <Card className={`card-container ${theme}`} sx={{maxWidth:'38ch'}}>
         <CardContent>
           <Typography
             gutterBottom

@@ -86,7 +86,7 @@ function SignIn() {
 
     return (
         <>
-            <ToastContainer
+                 <ToastContainer
                 position="top-right"
                 autoClose={2000}
                 hideProgressBar={false}
@@ -96,9 +96,10 @@ function SignIn() {
                 pauseOnFocusLoss
                 draggable
                 pauseOnHover
-                toastStyle={{ background: "success", color: "green", minHeight: "50px" }}
+                toastStyle={{ background: "green", color: "white", minHeight: "50px" }}
                 theme="#F5F5FC"
             />
+ 
 
             <Box sx={{ flexGrow: 1 }}>
                 <Grid container>

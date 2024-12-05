@@ -74,7 +74,6 @@ const AddTaskModal = ({ isOpen, onClose, initialTask, onSave }) => {
         localStorage.setItem("tasks", JSON.stringify(storedTasks));
       }
       toast.success(initialTask ? "Task updated successfully!" : "Task added successfully!", {
-        position: "top-right",
         autoClose: 2000,
       });
 
@@ -146,7 +145,19 @@ const AddTaskModal = ({ isOpen, onClose, initialTask, onSave }) => {
 
   return (
     <>
-      <ToastContainer />
+          <ToastContainer
+                position="top-right"
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                toastStyle={{ background: "green", color: "white", minHeight: "50px" }}
+                theme="#F5F5FC"
+            />
+ 
 
       <Modal open={isOpen} onClose={onClose} aria-labelledby="add-task-modal" 
       aria-describedby="add-task-description" className={`${theme}`}>
